@@ -45,15 +45,14 @@ const settings = {
 
 console.log(settings.theme)
 console.log(settings.autoSave)
-// 1. Toggle theme
+//Toggle theme
 settings.theme = settings.theme === "light" ? "dark" : "light"
-// 2. Turn autoSave to true
+//autoSave to true
 settings.autoSave = true
-// 3. Remove notifications
+//Remove notifications
 delete settings.notifications
-// 4. Freeze settings
+// Freeze 
 Object.freeze(settings)
-// Try modifying after freeze (will not work)
 settings.language = "fr"
 settings.theme = "light"
 console.log(settings)
