@@ -193,20 +193,20 @@ const transactions = [
 const credits = transactions.filter(t => t.type === "credit");
 console.log(credits);
 
-//    2. map() to extract only transaction amounts
+// map() to extract only transaction amounts
 const amts = transactions.map(t => t.amount);
 console.log(amts);
 
-//    3. reduce() to calculate final account balance
+//reduce() to calculate final account balance
 const balance = transactions.reduce((bal, t) => {
   return t.type === "credit" ? bal + t.amount : bal - t.amount;
 }, 0);
 console.log(balance);
 
-//    4. find() the first debit transaction
+//find() the first debit transaction
 const firstDebit = transactions.find(t => t.type === "debit");
 console.log(firstDebit);
 
-//    5. findIndex() of transaction with amount 10000*/
+// findIndex() of transaction with amount 10000*/
 const idx10000 = transactions.findIndex(t => t.amount === 10000);
 console.log(idx10000);
