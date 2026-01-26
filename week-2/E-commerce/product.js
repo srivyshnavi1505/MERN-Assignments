@@ -12,7 +12,7 @@
 
 export  function getProductById(Id) {
 
-    return products.find(p => p.Id === Id);
+    return products.find(p => p.id === Id);
 }
 
                           
