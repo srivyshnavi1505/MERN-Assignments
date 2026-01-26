@@ -11,10 +11,14 @@ const coupons = {
 
 export function validateCoupon(code, cartTotal, cartItems) {
   const coupon = coupons[code];
+     // 1. Check if coupon exists
+
   if (!coupon) return { valid: false, message: 'Invalid coupon' };
+  // 2. Check minimum amount requirement
   if (cartTotal < coupon.minAmount) {
     return { valid: false, message: 'Minimum amount not met' };
   }
+  // 3. Check category requirement (if any)
   if (coupon.category) {
     const hasCategory = cartItems.some(
       item => item.category === coupon.category
@@ -25,7 +29,7 @@ export function validateCoupon(code, cartTotal, cartItems) {
   }
   return { valid: true, message: 'Coupon applied' };
 }
-
+ // Calculate discount amount based on coupon type
 export function calculateDiscount(code, cartTotal) {
   const coupon = coupons[code];
   if (coupon.type === 'percentage') {
@@ -35,6 +39,8 @@ export function calculateDiscount(code, cartTotal) {
 }
 
 export function applyDiscount(cartTotal, code, cartItems) {
+    
+ // 1. Validate coupon
   const validation = validateCoupon(code, cartTotal, cartItems);
   if (!validation.valid) {
     return {
@@ -44,7 +50,7 @@ export function applyDiscount(cartTotal, code, cartItems) {
       message: validation.message
     };
   }
-
+// 2. If valid, calculate discount
   const discount = calculateDiscount(code, cartTotal);
   return {
     originalTotal: cartTotal,
