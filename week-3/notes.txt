@@ -1,0 +1,7 @@
+REST API  
+RULES FOR NAMING :
+use nouns not verbs  
+use plural
+use lowercase and hyphen 
+
+------------------------------------------------------------------------
