@@ -52,11 +52,11 @@ Content-Type: application/json
 }
 
 
-### Get product by Mongo ObjectId
+### Get product by id ( from mongodb)
 GET http://localhost:4000/api/products/697f98578661fab0eb451224
 
 
-### Update product by Mongo ObjectId
+### Update product byid
 PUT http://localhost:4000/api/products/697f98578661fab0eb451224
 Content-Type: application/json
 
