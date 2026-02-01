@@ -8,7 +8,6 @@ const productSchema = new Schema(
       required: [true, "product id is required"],
       min: [2, "minimum pid value is 2"],
       max: [5, "maximum pid value is 5"],
-         // pid should be unique
     },
 
     productName: {
