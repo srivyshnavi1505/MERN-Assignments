@@ -1,0 +1,28 @@
+###
+GET http://localhost:4000/product-api/products
+
+###
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productName":"tv",
+    "price":300,
+    "brand":"philips"
+}
+###user
+GET http://localhost:4000/user-api/users
+
+###
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"vyshu",
+    "email":"vysh2@gmail.com",
+    "password":"vysh",
+    "cart":[]
+}
+
+###
+PUT http://localhost:4000/user-api/user-cart/userid/6983838a056987576e5f2ab6/product/6983834f056987576e5f2ab2

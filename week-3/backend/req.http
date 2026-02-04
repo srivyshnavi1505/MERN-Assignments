@@ -30,12 +30,29 @@ Content-Type: application/json
   "age": 23
 }
 
-###
-
 ### Delete user by id
 DELETE http://localhost:4000/api/user-api/users/697f96618661fab0eb451216
 
 ###
+POST http://localhost:4000/api/user-api/users/auth
+Content-Type: application/json
+
+{
+  "username" : "vysh",
+  "password" : "vysh123"
+}
+
+###req for protected Route 
+GET http://localhost:4000/api/user-api/users/test
+
+
+
+
+
+//products
+
+
+
 
 ### Get all products
 GET http://localhost:4000/api/products
@@ -46,8 +63,8 @@ POST http://localhost:4000/api/products
 Content-Type: application/json
 
 {
-  "pid": 5,
-  "productName": "Keyboard",
+  "pid": 3,
+  "productName": "frock",
   "price": 999
 }
 
