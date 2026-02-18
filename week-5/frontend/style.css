@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #e6dfd2; /* light beige background */
+    color: #333;
+}
+
+.container {
+    width: 700px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #7aa5c0;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #cc6600;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.location {
+    font-style: italic;
+}

@@ -1,0 +1,63 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ffffff;
+    margin: 40px;
+}
+
+.container {
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile-text {
+    width: 65%;
+}
+
+.profile-image {
+    width: 45%;
+   
+}
+
+.profile-image img {
+    width: 100%;
+   
+    border: 1px solid #ccc;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+a {
+    color: purple;
+    text-decoration: underline;
+}
+
+.footer {
+    font-size: 14px;
+    margin-top: 10px;
+}

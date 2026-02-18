@@ -12,7 +12,7 @@ export function addToCart(productId, quantity) {
    // 3. Check if product already in cart
   const existingItem = cartItems.find(item => item.productId === productId);
   if (existingItem) {
-    existingItem.quantity += quantity;
+     existingItem.quantity += quantity;
   } else {
     cartItems.push({ productId, quantity });
   }
